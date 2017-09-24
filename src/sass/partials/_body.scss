@@ -1,0 +1,47 @@
+body {
+    font-family: Roboto Condensed !important;
+    background-color: $totheligth;
+}
+
+main {
+    padding-top: 50px;
+    .cover {
+    	//position: relative;
+    	background-image: url('https://pbs.twimg.com/profile_banners/320706434/1458467963/1500x500');
+        background-size: auto;
+    	//width: 100%;
+    	//height: 200px;
+        text-align: center;
+        padding: 20px;
+    	h2{
+    		margin: 0;
+    		padding: 35px;
+    		color: $determinedpeace;
+    	}
+    }
+}
+
+.entrada {
+    padding: 0px 1.5cm;
+    min-height: 300px;
+    background-color: $totheligth;
+    color: white;
+    &.left {
+        background-color: lightgrey;
+        color: #333;
+        h2 {
+            text-align: left;
+        }
+    }
+    &.right {
+        background-color: $determinedpeace;
+        color: #333;
+        h2 {
+            text-align: right;
+        }
+    }
+}
+
+.justified {
+    text-align: justify;
+}

@@ -1,0 +1,10 @@
+# Development dependencies
+node_modules/
+bower_components/
+lib/
+
+# Distribution folder
+dist/
+
+# Generated source CSS
+src/**/*.css
