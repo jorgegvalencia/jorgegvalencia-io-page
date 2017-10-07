@@ -1,0 +1,8 @@
+# Development dependencies
+node_modules/
+bower_components/
+lib/
+
+# Generated source CSS
+src/**/*.css
+src/**/*.css.map
