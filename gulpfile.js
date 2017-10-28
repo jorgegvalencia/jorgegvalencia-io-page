@@ -9,6 +9,7 @@
   let gulpsync = $.sync(gulp);
 
   $.browserSync = browserSync;
+  $.del = require('del');
 
   // Tasks definition
   gulp.task('dist-clean', task('dist-clean'));

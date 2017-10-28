@@ -19,6 +19,7 @@
   "homepage": "https://github.com/jorgegvalencia/jorgegvalencia.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
     "eslint": "^4.7.0",
     "eslint-config-google": "^0.9.1",
     "gulp": "^3.9.1",
