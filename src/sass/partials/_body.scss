@@ -1,48 +1,135 @@
+@mixin skill-percentage($percentage, $color) {
+    padding: 2px 2px;
+    // border-radius: 2px;
+    height: 10px;
+    width: 70%;
+    background: -webkit-linear-gradient(left, $color $percentage,#ffffff $percentage);
+    background:    -moz-linear-gradient(left, $color $percentage, #ffffff $percentage);
+    background:     -ms-linear-gradient(left, $color $percentage,#ffffff $percentage);
+    background:      -o-linear-gradient(left, $color $percentage,#ffffff $percentage);
+    background:         linear-gradient(to right, $color $percentage,#ffffff $percentage);
+}
+
 body {
     font-family: Roboto Condensed !important;
-    background-color: $totheligth;
+    // background-color: $totheligth;
     color: white;
+    font-size: 20px;
+    text-shadow: 1px 0px 5px #565656;
+    background: -webkit-linear-gradient(bottom, $windyday 5%, $totheligth);
+    background:    -moz-linear-gradient(bottom, $windyday 5%, $totheligth);
+    background:     -ms-linear-gradient(bottom, $windyday 5%, $totheligth);
+    background:      -o-linear-gradient(bottom, $windyday 5%, $totheligth);
+    background:         linear-gradient(to bottom, $windyday 5%, $totheligth);
 }
 
 main {
-    padding-top: 50px;
-    .cover {
-    	//position: relative;
-    	background-image: url('https://pbs.twimg.com/profile_banners/320706434/1458467963/1500x500');
-        background-size: auto;
-    	//width: 100%;
-    	//height: 200px;
+    padding-top: 64px;
+}
+
+// section {
+    // padding: 10% 0px 10% 0px;
+    // &:nth-child(even) {
+    //     background: -webkit-linear-gradient(bottom, $windyday 5%, $totheligth);
+    //     background:    -moz-linear-gradient(bottom, $windyday 5%, $totheligth);
+    //     background:     -ms-linear-gradient(bottom, $windyday 5%, $totheligth);
+    //     background:      -o-linear-gradient(bottom, $windyday 5%, $totheligth);
+    //     background:         linear-gradient(to bottom, $windyday 5%, $totheligth);
+    // }
+    // &:nth-child(odd) {        
+    //     background: -webkit-linear-gradient(bottom, $totheligth 5%, $windyday);
+    //     background:    -moz-linear-gradient(bottom, $totheligth 5%,$windyday);
+    //     background:     -ms-linear-gradient(bottom, $totheligth 5%,$windyday);
+    //     background:      -o-linear-gradient(bottom, $totheligth 5%,$windyday);
+    //     background:         linear-gradient(to bottom, $totheligth 5%,$windyday);
+    // }
+    // box-shadow: 0 5 100px 10px #555;
+// }
+
+.contact {
+    img {
+        max-width: 32px;
+        max-height: 32px;
+    }
+}
+
+.profession {
+    font-size: 36px;
+    padding: 12px 0px;
+    color: black;
+}
+
+.cover {
+    margin: 64px 0px 0px 0px;
+    padding: 64px 56px;
+    background-color: white;
+    text-shadow: none;
+    color: black;
+    text-align: center;
+    .title {
+        font-size: 56px;
+    }
+}
+.section-heading {
+    text-align: center;
+}
+.section-content {
+    font-size: 1.6rem;
+    li {
+        list-style-type: none;
+    }
+}
+.section-quote {
+    border: 0px;
+    font-size: 1.5rem;
+    font-style: italic;
+    .quote-source {
+        margin: 5px 0;
+        text-align: right;
+        display: block;
+    }
+}
+
+.skill{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+.skill-title {
+    text-align: right;
+}
+.skill-level {
+    &-1 {
+        @include skill-percentage(20%, #FFFF66)
+    }
+    &-2{
+        @include skill-percentage(40%, #D0E97C)
+    }
+    &-3{
+        @include skill-percentage(60%, #3BECB1)
+    }
+    &-4{
+        @include skill-percentage(80%, #80CA8C)
+    }
+    &-5{
+        @include skill-percentage(100%, #55C768)
+    }
+}
+
+// Tablet and higher resolution screens
+@media(min-width: 768px) {
+    .section-heading {
+        text-align: left;
+    }
+    .section-quote {
+        font-size: 1.5rem;
+        font-style: italic;
         text-align: center;
-        padding: 20px;
-    	h2{
-    		margin: 0;
-    		padding: 35px;
-    		color: $determinedpeace;
-    	}
+        position: relative;
+            .quote-source {
+                right: 0;
+                display: inline-block;
+                text-align: center;
+            }
     }
-}
-
-.entrada {
-    padding: 0px 1.5cm;
-    min-height: 300px;
-    background-color: $totheligth;
-    color: white;
-    &.left {
-        background-color: lightgrey;
-        color: #333;
-        h2 {
-            text-align: left;
-        }
-    }
-    &.right {
-        background-color: $determinedpeace;
-        color: #333;
-        h2 {
-            text-align: right;
-        }
-    }
-}
-
-.justified {
-    text-align: justify;
 }
