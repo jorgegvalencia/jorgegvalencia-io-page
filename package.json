@@ -4,6 +4,7 @@
   "description": "Personal page.",
   "main": "index.js",
   "scripts": {
+    "serve-dist": "gulp dist-build && cd dist && live-server --host=localhost",
     "install": "bower install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -2,9 +2,15 @@
   module.exports = function (gulp, $, config, args) {
     return function () {
 
-      var jsFilter = $.filter([config.paths.js], { restore: true });
-      var cssFilter = $.filter([config.paths.css], { restore: true });
-      var indexExclude = $.filter([config.paths.allFiles, '!' + config.paths.index], { restore: true });
+      var jsFilter = $.filter([config.paths.js], {
+        restore: true
+      });
+      var cssFilter = $.filter([config.paths.css], {
+        restore: true
+      });
+      var indexExclude = $.filter([config.paths.allFiles, '!' + config.paths.views], {
+        restore: true
+      });
 
       var uglify = $.uglify()
         .on('error', function (err) {
@@ -12,7 +18,7 @@
           this.emit('end');
         });
 
-      return gulp.src([config.paths.index])
+      return gulp.src([config.paths.views])
         .pipe($.cssUseref())
         .pipe($.useref())
         .pipe($.sourcemaps.init())
@@ -31,4 +37,3 @@
     };
   };
 }());
-
