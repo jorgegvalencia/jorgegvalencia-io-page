@@ -12,13 +12,16 @@ module.exports = function (config) {
     index: 'src/index.html',
     sass: 'src/sass/**/*.scss',
     allFiles: 'src/**/*',
-    views: 'src/**/*.html',
+    views: 'src/*.html',
     src: 'src/',
     dist: 'dist/',
     styles: 'src/assets/styles/',
     images: '**/images/*',
     bootstrap: {
       fonts: 'src/lib/bootstrap/fonts/*'
+    },
+    devicon: {
+      fonts: 'src/lib/devicon/fonts/*'
     }
   }
 

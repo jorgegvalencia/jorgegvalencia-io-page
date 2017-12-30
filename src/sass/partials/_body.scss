@@ -10,10 +10,14 @@
     background: linear-gradient(to right, $color $percentage, #ffffff $percentage);
 }
 
-$g_start: $plaindark;
-$g_end: $seablue;
+$g_start: $marine;
+$g_end: $taxi;
 $g_pctg_start: 5%;
 $g_pctg_end: 90%;
+$g_deg: 0deg;
+$gradient :
+#536976,
+#292e49;
 html {
     font-size: 16px;
 }
@@ -23,10 +27,10 @@ body {
     font-family: 'Roboto Condensed' !important; // background-color: $totheligth;
     color: white;
     background-color: #282a36;
-    background: -webkit-linear-gradient(35deg, $g_start $g_pctg_start, $g_end $g_pctg_end);
-    background: -ms-linear-gradient(35deg, $g_start $g_pctg_start, $g_end $g_pctg_end);
-    background: -o-linear-gradient(35deg, $g_start $g_pctg_start, $g_end $g_pctg_end);
-    background: linear-gradient(35deg, $g_start $g_pctg_start, $g_end $g_pctg_end); // background: linear-gradient(35deg, #42afe2, #2082dd);
+    background: -webkit-linear-gradient($g_deg, $gradient);
+    background: -ms-linear-gradient($g_deg, $gradient);
+    background: -o-linear-gradient($g_deg, $gradient);
+    background: linear-gradient($g_deg, $gradient); // background: linear-gradient(35deg, #42afe2, #2082dd);
 }
 
 .cover {
@@ -66,7 +70,7 @@ body {
         z-index: 1;
     }
     #atname {
-        color: $amarello;
+        color: $skyblue;
     }
     #cover-more-info {
         font-size: 1.5rem;
@@ -115,6 +119,7 @@ body {
     margin: 0 auto;
     vertical-align: top;
 }
+
 .workplace-logo {
     overflow: hidden;
     display: inline-block;
@@ -176,7 +181,7 @@ body {
 // Tablet and higher resolution screens
 @media(min-width: 768px) {
     .cover {
-        background-image: url('../images/forward_bg.jpg');
+        background-image: url('../images/forward_bg_1.jpg');
     }
     .section-heading {
         text-align: left;
@@ -198,22 +203,21 @@ body {
     max-width: 800px;
     position: relative;
     padding: 5px 70px;
-    font-size: 1rem;
+    font-size: 1.15rem;
     background: rgba(40, 40, 40, 0.2);
     margin: auto;
-    border-radius: 15px;
-    font-style: italic;
-    font-family: 'Bree Serif', serif;
+    border-radius: 15px; // font-style: italic;
+    font-family: 'Alegreya', serif;
     &:before {
         opacity: 0.5;
         display: block;
         position: absolute;
         z-index: 0;
         content: '„';
-        font-family: 'Arial', 'Bree Serif', serif;
+        font-family: 'Rokkitt', 'Raleway', serif;
         font-size: 145px;
-        color: $cloudy;
-        line-height: 150px;
+        color: $determinedpeace;
+        line-height: 180px;
         top: -100px;
         left: 20px;
     }
