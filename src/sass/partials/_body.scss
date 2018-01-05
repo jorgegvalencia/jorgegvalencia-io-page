@@ -14,10 +14,11 @@ $g_start: $marine;
 $g_end: $taxi;
 $g_pctg_start: 5%;
 $g_pctg_end: 90%;
-$g_deg: 0deg;
-$gradient :
-#536976,
+$g_deg: 35deg;
+$gradient:#292e49,
+$windyday,
 #292e49;
+// $gradient: $windyday,#292e49;
 html {
     font-size: 16px;
 }
@@ -36,7 +37,7 @@ body {
 .cover {
     position: relative;
     height: 100vh;
-    background-color: $cloudy;
+    background-color: $windyday;
     background-image: url('../images/forward_bg_mobile.png');
     background-size: cover, auto;
     background-position-x: 50%;
@@ -45,10 +46,11 @@ body {
     box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.2);
     color: white;
     text-align: center;
-    font-family: 'Sedgwick Ave';
+    font-family: 'Dosis', 'Sedgwick Ave';
     .cover-title {
         h1 {
-            font-size: 3rem;
+            font-weight: bold;
+            font-size: 3.875rem;
         }
         position: absolute;
         top: 40%;
@@ -65,12 +67,12 @@ body {
         left: 0;
         bottom: 0;
         right: 0;
-        background: $tothelight;
+        background: #292e49;
         opacity: 0.7;
         z-index: 1;
     }
     #atname {
-        color: $skyblue;
+        color: white;
     }
     #cover-more-info {
         font-size: 1.5rem;
@@ -84,7 +86,7 @@ body {
         color: #fff;
     }
     .profession {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -186,28 +188,19 @@ body {
     .section-heading {
         text-align: left;
     }
-    .section-quote {
-        font-size: 1.5rem;
-        font-style: italic;
-        text-align: center;
-        position: relative;
-        .quote-source {
-            right: 0;
-            display: inline-block;
-            text-align: center;
-        }
-    }
 }
 
 .quote {
+    text-shadow: none;
     max-width: 800px;
     position: relative;
     padding: 5px 70px;
-    font-size: 1.15rem;
+    font-size: 1rem;
+    font-style: italic;
     background: rgba(40, 40, 40, 0.2);
     margin: auto;
     border-radius: 15px; // font-style: italic;
-    font-family: 'Alegreya', serif;
+    font-family: 'Bree Serif', serif;
     &:before {
         opacity: 0.5;
         display: block;
@@ -232,5 +225,33 @@ body {
         font-style: italic;
         line-height: 28px;
         text-align: right;
+    }
+}
+
+.timeline {
+    color: $cloudy;
+}
+
+.toolset-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center
+}
+
+.toolset-icon {
+    text-shadow: none;
+    font-size: 48px;
+    margin: 6px 6px;
+    border-radius: 50%;
+    padding: 10px;
+    &.dark {
+        order: -1;
+        background-color: #222;
+    }
+    &.light {
+        background-color: white;
     }
 }

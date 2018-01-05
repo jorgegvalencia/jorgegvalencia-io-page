@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
-  <title>jorgegvalencia</title>
+  <title>jorgegvalencia | Web Developer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#1a2a6c" />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
   <!-- build:css assets/styles/vendor.min.css -->
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="lib/devicon/devicon.css">
+  <link rel="stylesheet" href="lib/devicon/devicon.min.css">
   <link rel="stylesheet" href="lib/devicon/devicon-colors.css">
   <!-- endbuild -->
   <!-- build:css assets/styles/main.min.css -->
@@ -19,9 +21,8 @@
   <div class="cover">
     <div class="cover-title">
       <h1>
-        I'm
         <span id="atname">
-          @jorgegvalencia
+          Jorge González Valencia
         </span>
       </h1>
       <h2 class="profession">Software Developer</h2>
@@ -58,11 +59,11 @@
                   <p>
                     Bachelor in Computer Science
                     <br>
-                    <small>2011 September - 2016 June</small>
+                    <small class="timeline">2011 September - 2016 June</small>
                   </p>
                 </div>
                 <div class="col-xs-6">
-                  <p>School of Computer Sciences Engineering and Mathematics, Universidad Politécnica de Madrid</p>
+                  <p>School of Computer Sciences Engineering and Mathematics, <br> Universidad Politécnica de Madrid</p>
                 </div>
               </div>
             </div>
@@ -86,7 +87,7 @@
                   <p>
                     Web and Hybrid Applications Developer
                     <br>
-                    <small>Since 2016 August</small>
+                    <small class="timeline">Since 2016 August</small>
                   </p>
                 </div>
                 <div class="col-xs-6">
@@ -101,7 +102,7 @@
                   <p>
                     Web Developer Intern
                     <br>
-                    <small>2016 February - 2016 July</small>
+                    <small class="timeline">2016 February - 2016 July</small>
                   </p>
                 </div>
                 <div class="col-xs-6">
@@ -116,11 +117,11 @@
                   <p>
                     Research Collaborator
                     <br>
-                    <small>2015 September - 2016 June</small>
+                    <small class="timeline">2015 September - 2016 June</small>
                   </p>
                 </div>
                 <div class="col-xs-6">
-                  <p>Bioinformatics Research Group, Universidad Politécnica de Madrid</p>
+                  <p>Bioinformatics Research Group, <br> Universidad Politécnica de Madrid</p>
                 </div>
               </div>
             </div>
@@ -205,44 +206,43 @@
               </div>
             </div>
             <div class="section-content text-center">
-              <div class="row">
-                <div class="col-xs-6">
-                  <i class="devicon-javascript-plain colored"></i>
-                  JavaScript
+              <div class="toolset-wrapper">
+                <div class="toolset-wrapper">
+                  <i class="toolset-icon devicon-javascript-plain colored dark" title="JavaScript"></i>
+                  <i class="toolset-icon devicon-typescript-plain colored dark" title="TypeScript"></i>
                 </div>
-                <div class="col-xs-6">
-                  <i class="devicon-typescript-plain colored"></i>
-                  TypeScript
+                <div class="toolset-wrapper">
+                  <i class="toolset-icon devicon-angularjs-plain colored light" title="Angular"></i>
+                  <i class="toolset-icon devicon-react-plain colored light" title="React"></i>
+                  <i class="toolset-icon devicon-nodejs-plain colored light" title="NodeJS"></i>
+                  <i class="toolset-icon devicon-express-original colored light" title="Express"></i>
                 </div>
-                <div class="col-xs-6">
-                  <i class="devicon-angularjs-plain colored"></i>
-                  AngularJS
+                <div class="toolset-wrapper">
+                  <i class="toolset-icon devicon-mongodb-plain colored light" title="MongoDB"></i>
+                  <i class="toolset-icon devicon-mysql-plain colored light" title="MySQL"></i>
                 </div>
-                <div class="col-xs-6">
-                  <i class="devicon-angularjs-plain colored"></i>
-                  Angular
-                </div>
-                <div class="col-xs-6">
-                  <i class="devicon-react-plain colored"></i>
-                  React
-                </div>
-                <div class="col-xs-6">
-                  <i class="devicon-nodejs-plain colored"></i>
-                  NodeJS
-                </div>
-                <div class="col-xs-6">
-                  <i class="devicon-mysql-plain colored"></i>
-                  MySQL
-                </div>
-                <div class="col-xs-6">
-                  <i class="devicon-git-plain colored"></i>
-                  Git
-                </div>
-                <div class="col-xs-6">
-                  <i class="devicon-gulp-plain colored"></i>
-                  Gulp
+                <div class="toolset-wrapper">
+                  <i class="toolset-icon devicon-gulp-plain colored light" title="Gulp"></i>
+                  <i class="toolset-icon devicon-git-plain colored light" title="Git"></i>
+                  <i class="toolset-icon devicon-sourcetree-plain colored light" title="SourceTree"></i>
                 </div>
               </div>
+              <!-- <div class="row">
+                <div class="col-xs-12">
+                  <i class="toolset-icon devicon-angularjs-plain colored light"></i>
+                  <i class="toolset-icon devicon-nodejs-plain colored light"></i>
+                  <i class="toolset-icon devicon-react-plain colored light"></i>
+                  <i class="toolset-icon devicon-mongodb-plain colored light"></i>
+                </div>
+                <div class="col-xs-12">
+                  <i class="toolset-icon devicon-git-plain colored light"></i>
+                  <i class="toolset-icon devicon-gulp-plain colored light"></i>
+                </div>
+                <div class="col-xs-12">
+                  <i class="toolset-icon devicon-javascript-plain colored dark"></i>
+                  <i class="toolset-icon devicon-typescript-plain colored dark"></i>
+                </div>
+              </div> -->
             </div>
           </div>
         </section>
@@ -252,10 +252,7 @@
           <div class="col-lg-offset-1 col-lg-10">
             <div class="section-heading">
               <h2>Projects</h2>
-              <hr>
-              <small>
-                Coming soon
-              </small>
+              <hr> Coming soon
             </div>
           </div>
         </section>
@@ -264,7 +261,7 @@
   </main>
   <footer>
     <!-- Code Testing TDD UX & UI Design CI -->
-    This site is currently under construction
+    This site is currently under construction <br> Image credits: cover background, by Amanda Sandlin
   </footer>
   <!-- build:js vendor.min.js -->
   <script src="lib/jquery/dist/jquery.js"></script>
